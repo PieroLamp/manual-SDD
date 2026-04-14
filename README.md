@@ -1,8 +1,13 @@
 # AI Specs for Skills-First Development
 
-This repository provides a portable AI setup focused on **skills** as the primary way to execute repeatable workflows. It is designed to be copied into projects that want consistent standards across Codex, Cursor, and Claude without duplicating prompt logic.
+This project is a practical manual and starter kit for running a complete **Spec-Driven Development (SDD)** workflow with AI, from product requirements and implementation planning to coding, verification, and code review. It provides a skills-first, reusable structure you can copy into your own repository to operationalize SDD in day-to-day delivery.
 
-It is highly recommended to use it with a spec-driven process such as [OpenSpec](https://github.com/Fission-AI/OpenSpec).
+It is useful because it turns SDD from a high-level idea into a repeatable system with shared standards, canonical prompts, and portable conventions that stay consistent across Codex, Cursor, and Claude.
+
+It is highly recommended to use it with a spec-driven process such as OpenSpec.
+
+
+If you want to try our best-practices in an Openspec-ready ecosystem, check out our [Openspec AI Specs alternative](https://github.com/LIDR-academy/ai-specs) 
 
 ## Repository Structure
 

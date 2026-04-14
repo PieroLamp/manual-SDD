@@ -33,13 +33,6 @@ It is highly recommended to use it with a spec-driven process such as [OpenSpec]
 └── README.md
 ```
 
-## What Changed
-
-- This setup is now **skills-first**.
-- Most previous workflow commands were removed.
-- We no longer use global root files such as `AGENTS.md`, `CLAUDE.md`, `codex.md`, or `GEMINI.md`.
-- Example technical context is no longer stored in `ai-specs/specs`; it now lives in `docs/`.
-
 ## Multi-Copilot Strategy
 
 This repository keeps a single canonical source in `ai-specs/` and exposes it to each copilot folder using symlinks:

@@ -99,6 +99,14 @@ When contributing:
 3. Preserve symlink-based sharing across copilot folders.
 4. Keep `docs/` aligned with the real project state.
 
+## Creator
+
+This framework was created by **Javier Vargas**, Head of AI @ Mapal.
+
+He is the original author of the approach, structure, and workflow design implemented in this repository.
+
+Connect with him on [LinkedIn](https://www.linkedin.com/in/javiervargascaro/).
+
 ## License
 
 Copyright (c) 2026 LIDR.co  

@@ -49,11 +49,9 @@ If the user **explicitly** requested no git operations (e.g. "no PR", "only comm
 
 ## 3. Commit message
 
-- Write the commit message **in English** (per `ai-specs/specs/base-standards.mdc`).
-- Make it **descriptive** (per Git Workflow in `backend-standards.mdc` and `frontend-standards.mdc`).
-- Structure it so that:
-  - **Subject line**: Short, imperative summary (e.g. "Add candidate filters to position list", "Fix validation for application deadline"). Optionally prefix with a scope or ticket id (e.g. `SCRUM-123: Add candidate filters`).
-  - **Body** (if needed): Bullet points or short paragraphs describing what changed and why (areas touched, new behavior, fixes). Reference ticket IDs here if they apply.
+- **Mandatory**: Read and execute the skill `ai-specs/skills/write-pr-report/SKILL.md` to generate the change summary text.
+- Derive the commit message from that skill output instead of manually defining style rules in this command.
+- Keep the commit message in English.
 - Do not commit secrets, `.env`, or other sensitive or generated artifacts.
 
 ## 4. Commit and push
@@ -63,10 +61,10 @@ If the user **explicitly** requested no git operations (e.g. "no PR", "only comm
 
 ## 5. Pull Request
 
-- Use the **GitHub CLI (`gh`)** for all GitHub operations (per `develop-backend.md`).
-- Create or update the PR for the current branch:
-  - **Title**: Clear, aligned with the commit (e.g. include ticket ID if applicable: `[SCRUM-123] Add candidate filters to position list`).
-  - **Description**: Summarize the change set, link to the ticket if relevant, and note any testing or follow-ups.
+- Use the **GitHub CLI (`gh`)** for all GitHub operations.
+- **Mandatory**: Before creating or updating any PR, read and execute the skill `ai-specs/skills/write-pr-report/SKILL.md`.
+- Do not manually draft the PR description in this command; always use the skill output as the PR body.
+- Keep direct GitHub interaction in this command (e.g. `gh pr create`, `gh pr edit`, `gh pr view`) and return the resulting PR URL.
 - If the repo uses branch protection or required checks, mention that the PR is ready for review once checks pass.
 
 ## 6. Summary for the user
@@ -77,9 +75,11 @@ If the user **explicitly** requested no git operations (e.g. "no PR", "only comm
 
 # References
 
-- `ai-specs/specs/base-standards.mdc`: English-only for commit messages and technical artifacts.
-- `ai-specs/specs/backend-standards.mdc` and `ai-specs/specs/frontend-standards.mdc`: Git Workflow (feature branches, descriptive commits, small focused branches).
-- `ai-specs/.commands/develop-backend.md`: Use `gh` for GitHub and PR creation; optional ticket-based branch and PR linking.
+- `docs/doc_verification_guide.md`
+- `docs/doc_architecture.md`
+- `docs/doc_ai_planning_mode.md`
+- `ai-specs/skills/write-pr-report/SKILL.md`
+
 
 # Notes
 
